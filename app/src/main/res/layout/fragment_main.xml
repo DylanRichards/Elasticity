@@ -1,0 +1,91 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.udylity.elasticity.MainActivity$PlaceholderFragment">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/priceOld"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNoExtractUi"
+            android:layout_weight="1"
+            android:hint="Original Price"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="to"/>
+
+        <EditText
+            android:id="@+id/priceNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNoExtractUi"
+            android:layout_weight="1"
+            android:hint="New Price"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <EditText
+            android:id="@+id/demandOld"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNoExtractUi"
+            android:layout_weight="1"
+            android:hint="Original Demand"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="to"/>
+
+        <EditText
+            android:id="@+id/demandNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNoExtractUi"
+            android:layout_weight="1"
+            android:hint="New Demand"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/typeElasticityTv"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text=""/>
+        <TextView
+            android:id="@+id/numberElasticityTv"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text=""/>
+    </TableRow>
+</TableLayout>
